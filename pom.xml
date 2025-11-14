@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.combostrap</groupId>
+    <artifactId>combostrap-parent</artifactId>
+    <version>0.1.2</version>
+  </parent>
+
+  <artifactId>combostrap-dependencies</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>ComboJ Stack - ComboJ components versions</name>
+
+  <scm>
+    <connection>scm:git:git@github.com:combostrap/comboj-dependencies.git</connection>
+    <developerConnection>scm:git:git@github.com:combostrap/comboj-dependencies.git</developerConnection>
+    <url>git@github.com:combostrap/comboj-dependencies.git</url>
+  </scm>
+
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.combostrap</groupId>
+        <artifactId>combostrap-type</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+
+      <dependency>
+        <groupId>org.ini4j</groupId>
+        <artifactId>ini4j</artifactId>
+        <version>0.5.4</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- XML          -->
+      <!-- ************ -->
+      <dependency>
+        <groupId>com.thoughtworks.xstream</groupId>
+        <artifactId>xstream</artifactId>
+        <version>1.4.21</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Ssh, sftp    -->
+      <!-- ************ -->
+      <dependency>
+        <groupId>com.jcraft</groupId>
+        <artifactId>jsch</artifactId>
+        <version>0.1.51</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Json         -->
+      <!-- ************ -->
+      <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.12.1</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.json/json -->
+      <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20250107</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+      <dependency>
+        <groupId>com.jayway.jsonpath</groupId>
+        <artifactId>json-path</artifactId>
+        <version>2.9.0</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- HTML         -->
+      <!-- ************ -->
+      <dependency>
+        <groupId>org.jsoup</groupId>
+        <artifactId>jsoup</artifactId>
+        <version>1.15.3</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sourceforge.cssparser</groupId>
+        <artifactId>cssparser</artifactId>
+        <version>0.9.29</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Graph        -->
+      <!-- ************ -->
+      <!-- Graph to create the dag-->
+      <dependency>
+        <groupId>org.jgrapht</groupId>
+        <artifactId>jgrapht-core</artifactId>
+        <version>1.4.0</version>
+      </dependency>
+      <!-- Graph Output -->
+      <dependency>
+        <groupId>org.jgrapht</groupId>
+        <artifactId>jgrapht-io</artifactId>
+        <version>1.4.0</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Email        -->
+      <!-- ************ -->
+      <!-- https://mvnrepository.com/artifact/jakarta.mail/jakarta.mail-api -->
+      <dependency>
+        <groupId>jakarta.mail</groupId>
+        <artifactId>jakarta.mail-api</artifactId>
+        <version>${jakarta.version}</version>
+      </dependency>
+      <!-- https://eclipse-ee4j.github.io/angus-mail/-->
+      <dependency>
+        <groupId>org.eclipse.angus</groupId>
+        <artifactId>angus-mail</artifactId>
+        <version>${angus-email.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.simplejavamail</groupId>
+        <artifactId>simple-java-mail</artifactId>
+        <version>${simple-email.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sanctionco.jmail</groupId>
+        <artifactId>jmail</artifactId>
+        <version>${jmail-email-validation.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.davidmoten</groupId>
+        <artifactId>subethasmtp</artifactId>
+        <version>${subetha.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.apis</groupId>
+        <artifactId>google-api-services-gmail</artifactId>
+        <version>${google-api-gmail.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.api-client</groupId>
+        <artifactId>google-api-client</artifactId>
+        <version>${google-api-client.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.oauth-client</groupId>
+        <artifactId>google-oauth-client-jetty</artifactId>
+        <version>${google-oauth-client.version}</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Docker       -->
+      <!-- ************ -->
+      <!-- Test Container -->
+      <!-- https://mvnrepository.com/artifact/org.testcontainers/testcontainers-bom -->
+      <!-- https://github.com/testcontainers/testcontainers-java -->
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>testcontainers-bom</artifactId>
+        <version>1.20.6</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/com.github.docker-java/docker-java-core -->
+      <!-- Version from test containers: https://github.com/testcontainers/testcontainers-java/blob/1.20.6/core/build.gradle#L91 -->
+      <dependency>
+        <groupId>com.github.docker-java</groupId>
+        <artifactId>docker-java-bom</artifactId>
+        <version>3.4.1</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+
+      <!-- ************ -->
+      <!-- WebDriver    -->
+      <!-- ************ -->
+      <!-- https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries/-->
+      <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java-->
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.9.1</version>
+      </dependency>
+      <!--  https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+      <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.3.3</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Exec         -->
+      <!-- ************ -->
+      <dependency>
+        <groupId>org.zeroturnaround</groupId>
+        <artifactId>zt-exec</artifactId>
+        <version>${exec.version}</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Test         -->
+      <!-- ************ -->
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${junit5.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit4.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>${assertj.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-core</artifactId>
+        <version>${harmcrest.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Log          -->
+      <!-- ************ -->
+      <!-- Slf4j -->
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>2.0.9</version>
+      </dependency>
+      <!-- SLF4J implementation: Adapter Logback Classic-->
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.5.13</version>
+        <scope>test</scope>
+      </dependency>
+      <!-- SLF4J implementation: Java JUL-->
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-jdk14</artifactId>
+        <version>2.0.9</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-bom</artifactId>
+        <version>2.20.0</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Bom        -->
+      <!-- ************ -->
+      <!-- Last as it has low priority -->
+      <!-- Vertx -->
+      <dependency>
+        <groupId>io.vertx</groupId>
+        <artifactId>vertx-stack-depchain</artifactId>
+        <version>4.5.3</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+
+</project>
