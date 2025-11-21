@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>com.combostrap</groupId>
     <artifactId>combostrap-parent</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3-SNAPSHOT</version>
   </parent>
 
   <artifactId>combostrap-dependencies</artifactId>
@@ -16,6 +16,41 @@
   <packaging>pom</packaging>
 
   <name>ComboJ Stack - ComboJ components versions</name>
+
+  <properties>
+    <junit4.version>4.13.2</junit4.version>
+    <junit5.version>5.12.1</junit5.version>
+    <harmcrest.version>2.2</harmcrest.version>
+    <assertj.version>3.4.1</assertj.version>
+
+    <vertx.version>4.5.3</vertx.version>
+    <!-- Jackson same as vertx-->
+    <!-- Check the vertx web artifact dependencies-->
+    <!-- https://mvnrepository.com/artifact/io.vertx/vertx-web-->
+    <jackson.version>2.16.1</jackson.version>
+    <!-- # Email -->
+    <!-- angus and jakarta should be the same as in SimpleEmail (don't know how to do that)-->
+    <!-- https://github.com/bbottema/simple-java-mail/blob/master/modules/core-module/pom.xml-->
+    <!-- https://eclipse-ee4j.github.io/angus-mail/-->
+    <jakarta.version>2.1.2</jakarta.version>
+    <simple-email.version>8.12.5</simple-email.version>
+    <jmail-email-validation.version>2.0.0</jmail-email-validation.version>
+    <angus-email.version>2.0.2</angus-email.version>
+    <!-- See the set of version here https://developers.google.com/gmail/api/quickstart/java -->
+    <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-gmail -->
+    <google-api-gmail.version>v1-rev20220404-2.0.0</google-api-gmail.version>
+    <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
+    <google-api-client.version>2.0.1</google-api-client.version>
+    <google-oauth-client.version>1.34.1</google-oauth-client.version>
+    <!-- https://mvnrepository.com/artifact/org.zeroturnaround/zt-exec-->
+    <!-- https://github.com/zeroturnaround/zt-exec -->
+    <!-- They support future -->
+    <exec.version>1.12</exec.version>
+    <!-- email SMTP server
+    https://mvnrepository.com/artifact/com.github.davidmoten/subethasmtp -->
+    <subetha.version>7.1.7</subetha.version>
+  </properties>
+
 
   <scm>
     <connection>scm:git:git@github.com:combostrap/comboj-dependencies.git</connection>

@@ -1,3 +1,0 @@
-[submodule "repo-shared"]
-	path = .repo-shared
-	url = https://github.com/combostrap/repo-shared.git
