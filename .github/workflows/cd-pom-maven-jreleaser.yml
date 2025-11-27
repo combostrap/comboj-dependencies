@@ -14,7 +14,9 @@ on:
       - 'main'
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    # Slim is one CPU vs 4 for the standard ubuntu-latest
+    # Price is at the core by minutes
+    runs-on: ubuntu-slim
     steps:
 
       - name: Git Checkout ${{ github.ref_name }}

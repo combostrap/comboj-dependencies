@@ -69,12 +69,25 @@
 
   <dependencyManagement>
     <dependencies>
+
       <dependency>
         <groupId>com.combostrap</groupId>
         <artifactId>combostrap-type</artifactId>
         <version>${project.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.combostrap</groupId>
+        <artifactId>combostrap-crypto</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <!-- Crypto -->
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk18on</artifactId>
+        <version>1.78</version>
+      </dependency>
 
       <dependency>
         <groupId>org.ini4j</groupId>
