@@ -12,10 +12,12 @@
   </parent>
 
   <artifactId>combostrap-dependencies</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <version>0.1.0-SNAPSHOT</version>
 
   <name>ComboJ Stack - ComboJ components versions</name>
+  <description>Common combostrap java dependencies</description>
+  <url>https://github.com/combostrap/comboj-dependencies</url>
 
   <properties>
     <junit4.version>4.13.2</junit4.version>
