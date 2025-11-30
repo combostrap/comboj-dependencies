@@ -74,6 +74,12 @@
 
       <dependency>
         <groupId>com.combostrap</groupId>
+        <artifactId>combostrap-base</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.combostrap</groupId>
         <artifactId>combostrap-crypto</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -82,6 +88,31 @@
         <groupId>com.combostrap</groupId>
         <artifactId>combostrap-template</artifactId>
         <version>${project.version}</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- Text File    -->
+      <!-- ************ -->
+      <!-- For character set detection -->
+      <dependency>
+        <groupId>com.ibm.icu</groupId>
+        <artifactId>icu4j</artifactId>
+        <version>68.1</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- XML Text File    -->
+      <!-- ************ -->
+      <!-- In Java 11 or higher, JAXB has been removed from JDK  -->
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.3.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.thoughtworks.xstream</groupId>
+        <artifactId>xstream</artifactId>
+        <version>1.4.21</version>
       </dependency>
 
       <!-- ************ -->
@@ -114,14 +145,6 @@
         <version>0.5.4</version>
       </dependency>
 
-      <!-- ************ -->
-      <!-- XML          -->
-      <!-- ************ -->
-      <dependency>
-        <groupId>com.thoughtworks.xstream</groupId>
-        <artifactId>xstream</artifactId>
-        <version>1.4.21</version>
-      </dependency>
 
       <!-- ************ -->
       <!-- Ssh, sftp    -->
