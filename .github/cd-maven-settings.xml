@@ -1,3 +1,4 @@
+<!--Set the repositories -->
 <!--https://maven.apache.org/settings.html-->
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
@@ -77,6 +78,4 @@
     </profile>
   </profiles>
 
-  <!-- A list of profile IDs that Maven should activate automatically for every build.-->
-  <activeProfiles/>
 </settings>
