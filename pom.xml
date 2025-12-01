@@ -90,6 +90,27 @@
         <version>${project.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.combostrap</groupId>
+        <artifactId>combostrap-tui</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.combostrap</groupId>
+        <artifactId>combostrap-dns</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <!-- ************ -->
+      <!-- DNS          -->
+      <!-- ************ -->
+      <dependency>
+        <groupId>dnsjava</groupId>
+        <artifactId>dnsjava</artifactId>
+        <version>3.6.0</version>
+      </dependency>
+
       <!-- ************ -->
       <!-- Text File    -->
       <!-- ************ -->
