@@ -230,6 +230,16 @@
       </dependency>
 
       <!-- ************ -->
+      <!-- Common Util above JDK  -->
+      <!-- ************ -->
+      <!-- For instance: InternetDomainName -->
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>33.5.0-jre</version>
+      </dependency>
+
+      <!-- ************ -->
       <!-- Graph        -->
       <!-- ************ -->
       <!-- Graph to create the dag-->
